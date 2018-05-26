@@ -131,11 +131,6 @@ desc = "compound interest"
 profitable = True
 ```
 
-# Guess the type
-To find out the type of a value or a variable that refers to that value, you can use the type() function. Suppose you've defined a variable a, but you forgot the type of this variable. To determine the type of a, simply execute:
-type(a)
-
-
 # Operations with other types
 Filip mentioned that different types behave differently in Python.
 
