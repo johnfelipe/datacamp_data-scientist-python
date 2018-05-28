@@ -185,7 +185,6 @@ If you pass only one argument, Python will know what to do and will use the inde
 
 Requirement(s)
 Add some lines of code after the for loop:
-
 Import matplotlib.pyplot as plt.
 Use plt.plot() to plot random_walk.
 Finish off with plt.show() to actually display the plot.
