@@ -1,7 +1,6 @@
 '''
 Print out the second element from the areas list, so 11.25.
 Subset and print out the last element of areas, being 9.50.
-Using a negative index makes sense here!
 Select the number representing the area of the living room and print it out.
 '''
 
