@@ -1,6 +1,7 @@
 '''
 Using a combination of list subsetting and variable assignment,
-create a new variable, eat_sleep_area, that contains the sum of the area of the kitchen and the area of the bedroom.
+create a new variable, eat_sleep_area,
+that contains the sum of the area of the kitchen and the area of the bedroom.
 Print the new variable eat_sleep_area.
 '''
 
