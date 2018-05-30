@@ -1,5 +1,6 @@
 '''
-Create a list, areas, that contains the area of the hallway (hall),
+Create a list, areas, that contains the area of the
+hallway (hall),
 kitchen (kit),
 living room (liv),
 bedroom (bed) and bathroom (bath), in this order.
