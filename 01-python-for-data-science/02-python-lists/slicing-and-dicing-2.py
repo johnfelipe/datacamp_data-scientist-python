@@ -1,7 +1,7 @@
 '''
 Use slicing to create the lists downstairs and upstairs again,
 but this time without using indexes if it's not necessary.
-Remember downstairs is the first 6 elements of areas and upstairs is the last 4 elements of areas.
+Downstairs is the first 6 elements of areas and upstairs is the last 4 elements of areas.
 '''
 
 # Create the areas list
