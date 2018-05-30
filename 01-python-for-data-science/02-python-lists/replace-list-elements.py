@@ -1,8 +1,7 @@
 '''
 You did a miscalculation when determining the area of the bathroom;
 it's 10.50 square meters instead of 9.50.
-Can you make the changes? Make the areas list more trendy!
-Change "living room" to "chill zone".
+Make the areas list more trendy! Change "living room" to "chill zone".
 '''
 
 # Create the areas list
