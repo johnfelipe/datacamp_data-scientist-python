@@ -2,7 +2,6 @@
 Finish the line of code that creates the areas list such that
 the list first contains the name of each room as a string and then its area.
 More specifically, add the strings "hallway", "kitchen" and "bedroom" at the appropriate locations.
-Print areas again; is the printout more informative this time?
 '''
 
 # area variables (in square meters)
