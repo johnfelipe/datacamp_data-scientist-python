@@ -1,5 +1,5 @@
 '''
-Experiment in the IPython Shell; type 5 / 8, for example.
+Experiment, type 5 / 8, for example.
 Add another line of code to the Python script: print(7 + 10).
 '''
 
