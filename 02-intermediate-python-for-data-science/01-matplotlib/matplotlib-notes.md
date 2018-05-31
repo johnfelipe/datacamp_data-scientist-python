@@ -10,7 +10,6 @@ Requirement(s)
 print() the last item from both the year and the pop list to see what the predicted population for the year 2100 is. Use two print() functions.
 Before you can start, you should import matplotlib.pyplot as plt. pyplot is a sub-package of matplotlib, hence the dot.
 Use plt.plot() to build a line plot. year should be mapped on the horizontal axis, pop on the vertical axis. Don't forget to finish off with the show() function to actually display the plot.
-
 ```
 # Print the last item from year and pop
 print(year[-1])
@@ -27,13 +26,13 @@ plt.show()
 ```
 
 # Line plot (3)
-Now that you've built your first line plot, let's start working on the data that professor Hans Rosling used to build his beautiful bubble chart. It was collected in 2007. Two lists are available for you:
+Let's start working on the data that professor Hans Rosling used to build his beautiful bubble chart. It was collected in 2007. Two lists are available for you:
 
 life_exp which contains the life expectancy for each country and
 gdp_cap, which contains the GDP per capita (i.e. per person) for each country expressed in US Dollars.
 GDP stands for Gross Domestic Product. It basically represents the size of the economy of a country. Divide this by the population and you get the GDP per capita.
 
-matplotlib.pyplot is already imported as plt, so you can get started straight away.
+matplotlib.pyplot is already imported as plt
 
 Requirement(s)
 Print the last item from both the list gdp_cap, and the list life_exp; it is information about Zimbabwe.
