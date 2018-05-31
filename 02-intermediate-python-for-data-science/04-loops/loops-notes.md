@@ -24,7 +24,6 @@ while offset != 0 :
     print(offset)
 ```
 
-
 # Add conditionals
 The while loop that corrects the offset is a good start, but what if offset is negative? You can try to run the sample code on the right where offset is initialized to -6, but your sessions will be disconnected. The while loop will never stop running, because offset will be further decreased on every run. offset != 0 will never become False and the while loop continues forever.
 
