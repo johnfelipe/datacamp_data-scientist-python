@@ -4,7 +4,6 @@ To see why dictionaries are useful, have a look at the two lists defined on the 
 Requirement(s)
 Use the index() method on countries to find the index of 'germany'. Store this index as ind_ger.
 Use ind_ger to access the capital of Germany from the capitals list. Print it out.
-
 ```
 # Definition of countries and capital
 countries = ['spain', 'france', 'germany', 'norway']
@@ -29,7 +28,6 @@ In this recipe, both the keys and the values are strings. This will also be the 
 Requirement(s)
 With the strings in countries and capitals, create a dictionary called europe with 4 key:value pairs. Beware of capitalization! Make sure you use lowercase characters everywhere.
 Print out europe to see if the result is what you expected.
-
 ```
 # Definition of countries and capital
 countries = ['spain', 'france', 'germany', 'norway']
@@ -56,7 +54,6 @@ Here, 'france' is the key and 'paris' the value is returned.
 Requirement(s)
 Check out which keys are in europe by calling the keys() method on europe. Print out the result.
 Print out the value that belongs to the key 'norway'.
-
 ```
 # Definition of dictionary
 europe = {'spain':'madrid', 'france':'paris', 'germany':'berlin', 'norway':'oslo' }
@@ -78,7 +75,6 @@ Add the key 'italy' with the value 'rome' to europe.
 To assert that 'italy' is now a key in europe, print out 'italy' in europe.
 Add another key:value pair to europe: 'poland' is the key, 'warsaw' is the corresponding value.
 Print out europe.
-
 ```
 # Definition of dictionary
 europe = {'spain':'madrid', 'france':'paris', 'germany':'berlin', 'norway':'oslo' }
@@ -105,7 +101,6 @@ Requirement(s)
 The capital of Germany is not 'bonn'; it's 'berlin'. Update its value.
 Australia is not in Europe, Austria is! Remove the key 'australia' from europe.
 Print out europe to see if your cleaning work paid off.
-
 ```
 # Definition of dictionary
 europe = {'spain':'madrid', 'france':'paris', 'germany':'bonn',
@@ -136,7 +131,6 @@ Requirement(s)
 Use chained square brackets to select and print out the capital of France.
 Create a dictionary, named data, with the keys 'capital' and 'population'. Set them to 'rome' and 59.83, respectively.
 Add a new key-value pair to europe; the key is 'italy' and the value is data, the dictionary you just built.
-
 ```
 # Dictionary of dictionaries
 europe = { 'spain': { 'capital':'madrid', 'population':46.77 },
@@ -184,7 +178,6 @@ key 'drives_right' and value dr.
 key 'cars_per_cap' and value cpc.
 Use pd.DataFrame() to turn your dict into a DataFrame called cars.
 Print out cars and see how beautiful it is.
-
 ```
 # Pre-defined lists
 names = ['United States', 'Australia', 'Japan', 'India', 'Russia', 'Morocco', 'Egypt']
@@ -217,7 +210,6 @@ Requirement(s)
 Hit Submit Answer to see that, indeed, the row labels are not correctly set.
 Specify the row labels by setting cars.index equal to row_labels.
 Print out cars again and check if the row labels are correct this time.
-
 ```
 import pandas as pd
 
@@ -250,7 +242,6 @@ Requirement(s)
 To import CSV files you still need the pandas package: import it as pd.
 Use pd.read_csv() to import cars.csv data as a DataFrame. Store this dataframe as cars.
 Print out cars. Does everything look OK?
-
 ```
 # Import pandas as pd
 import pandas as pd
@@ -273,7 +264,6 @@ Requirement(s)
 Run the code with Submit Answer and assert that the first column should actually be used as row labels.
 Specify the index_col argument inside pd.read_csv(): set it to 0, so that the first column is used as row labels.
 Has the printout of cars improved now?
-
 ```
 # Import pandas as pd
 import pandas as pd
@@ -298,7 +288,6 @@ Requirement(s)
 Use single square brackets to print out the country column of cars as a Pandas Series.
 Use double square brackets to print out the country column of cars as a Pandas DataFrame.
 Use double square brackets to print out a DataFrame with both the country and drives_right columns of cars, in this order.
-
 ```
 # Import cars data
 import pandas as pd
@@ -325,7 +314,6 @@ Pay attention: You can only select rows using square brackets if you specify a s
 Requirement(s)
 Select the first 3 observations from cars and print them out.
 Select the fourth, fifth and sixth observation, corresponding to row indexes 3, 4 and 5, and print them out.
-
 ```
 # Import cars data
 import pandas as pd
@@ -356,7 +344,6 @@ As before, code is included that imports the cars data as a Pandas DataFrame.
 Requirement(s)
 Use loc or iloc to select the observation corresponding to Japan as a Series. The label of this row is JAP, the index is 2. Make sure to print the resulting Series.
 Use loc or iloc to select the observations for Australia and Egypt as a DataFrame. You can find out about the labels/indexes of these rows by inspecting cars in the IPython Shell. Make sure to print the resulting DataFrame.
-
 ```
 # Import cars data
 import pandas as pd
@@ -383,7 +370,6 @@ cars.iloc[[3, 4], [0, 1]]
 Requirement(s)
 Print out the drives_right value of the row corresponding to Morocco (its row label is MOR)
 Print out a sub-DataFrame, containing the observations for Russia and Morocco and the columns country and drives_right.
-
 ```
 # Import cars data
 import pandas as pd
@@ -408,7 +394,6 @@ Requirement(s)
 Print out the drives_right column as a Series using loc or iloc.
 Print out the drives_right column as a DataFrame using loc or iloc.
 Print out both the cars_per_cap and drives_right column as a DataFrame using loc or iloc.
-
 ```
 # Import cars data
 import pandas as pd
