@@ -1,5 +1,4 @@
 # Equality
-
 To check if two Python values, or variables, are equal you can use ==. To check for inequality, you need !=. As a refresher, have a look at the following examples that all result in True. Feel free to try them out in the IPython Shell.
 2 == (1 + 1)
 "intermediate" != "python"
@@ -12,7 +11,6 @@ In the editor on the right, write code to see if True equals False.
 Write Python code to check if -5 * 15 is not equal to 75.
 Ask Python whether the strings "pyscript" and "PyScript" are equal.
 What happens if you compare booleans and integers? Write code to see if True and 1 are equal.
-
 ```
 # Comparison of booleans
 print(True == False)
@@ -28,7 +26,6 @@ print(True == 1)
 ```
 
 # Greater and less than
-
 In the video, Filip also talked about the less than and greater than signs, < and > in Python. You can combine them with an equals sign: <= and >=. Pay attention: <= is valid syntax, but =< is not.
 
 All Python expressions in the following code chunk evaluate to True:
@@ -43,7 +40,6 @@ Write Python expressions, wrapped in a print() function, to check whether:
 x is greater than or equal to -10. x has already been defined for you.
 "test" is less than or equal to y. y has already been defined for you.
 True is greater than False.
-
 ```
 # Comparison of integers
 x = -3 * 6
@@ -68,7 +64,6 @@ Using comparison operators, generate boolean arrays that answer the following qu
 Which areas in my_house are greater than or equal to 18?
 You can also compare two Numpy arrays element-wise. Which areas in my_house are smaller than the ones in your_house?
 Make sure to wrap both commands in a print() statement, so that you can inspect the output.
-
 ```
 # Create arrays
 import numpy as np
@@ -83,7 +78,6 @@ my_house < your_house
 ```
 
 # and, or, not (1)
-
 A boolean is either 1 or 0, True or False. With boolean operators such as and, or and not, you can combine these booleans to perform more advanced queries on your data.
 
 In the sample code on the right, two variables are defined: my_kitchen and your_kitchen, representing areas.
@@ -93,7 +87,6 @@ Write Python expressions, wrapped in a print() function, to check whether:
 my_kitchen is bigger than 10 and smaller than 18.
 my_kitchen is smaller than 14 or bigger than 17.
 double the area of my_kitchen is smaller than triple the area of your_kitchen.
-
 ```
 # Define variables
 my_kitchen = 18.0
@@ -110,7 +103,6 @@ print(my_kitchen * 2 < your_kitchen * 3)
 ```
 
 # Boolean operators with Numpy
-
 Before, the operational operators like < and >= worked with Numpy arrays out of the box. Unfortunately, this is not true for the boolean operators and, or, and not.
 
 To use these operators with Numpy, you will need np.logical_and(), np.logical_or() and np.logical_not(). Here's an example on the my_house and your_house arrays from before to give you an idea:
@@ -122,7 +114,6 @@ Requirement(s)
 Generate boolean arrays that answer the following questions:
 Which areas in my_house are greater than 18.5 or smaller than 10?
 Which areas are smaller than 11 in both my_house and your_house? Make sure to wrap both commands in print() statement, so that you can inspect the output.
-
 ```
 # Create arrays
 import numpy as np
@@ -146,7 +137,6 @@ Two variables are defined in the sample code: room, a string that tells you whic
 Requirement(s)
 Examine the if statement that prints out "Looking around in the kitchen." if room equals "kit".
 Write another if statement that prints out "big place!" if area is greater than 15.
-
 ```
 # Define variables
 room = "kit"
@@ -163,15 +153,12 @@ if area > 15:
 ```
 
 # Add else
-
-On the right, the if construct for room has been extended with an else statement so that "looking around elsewhere." is printed if the condition room = "kit" evaluates to False.
+The if construct for room has been extended with an else statement so that "looking around elsewhere." is printed if the condition room = "kit" evaluates to False.
 
 Can you do a similar thing to add more functionality to the if construct for area?
 
-
 Requirement(s)
 Add an else statement to the second control structure so that "pretty small." is printed out if area > 15 evaluates to False.
-
 ```
 # Define variables
 room = "kit"
@@ -191,14 +178,12 @@ else :
 ```
     
 # Customize further: elif
-
 It's also possible to have a look around in the bedroom. The sample code contains an elif part that checks if room equals "bed". In that case, "looking around in the bedroom." is printed out.
 
 It's up to you now! Make a similar addition to the second control structure to further customize the messages for different values of area.
 
 Requirement(s)
 Add an elif to the second control structure such that "medium size, nice!" is printed out if area is greater than 10.
-
 ```
 # Define variables
 room = "bed"
@@ -222,7 +207,6 @@ else :
 ```
     
 # Driving right (1)
-
 Remember that cars dataset, containing the cars per 1000 people (cars_per_cap) and whether people drive right (drives_right) for different countries (country)? The code that imports this data in CSV format into Python as a DataFrame is available on the right.
 
 In the video, you saw a step-by-step approach to filter observations from a DataFrame based on boolean arrays. Let's start simple and try to find all observations in cars where drives_right is True.
@@ -233,7 +217,6 @@ Requirement(s)
 Extract the drives_right column as a Pandas Series and store it as dr.
 Use dr, a boolean Series, to subset the cars DataFrame. Store the resulting selection in sel.
 Print sel, and assert that drives_right is True for all observations.
-
 ```
 # Import cars data
 import pandas as pd
@@ -250,12 +233,10 @@ print(sel)
 ```
 
 # Driving right (2)
-
 The code in the previous example worked fine, but you actually unnecessarily created a new variable dr. You can achieve the same result without this intermediate variable. Put the code that computes dr straight into the square brackets that select observations from cars.
 
 Requirement(s)
 Convert the code on the right to a one-liner that calculates the variable sel as before.
-
 ```
 # Import cars data
 import pandas as pd
@@ -269,7 +250,6 @@ print(sel)
 ```
 
 # Cars per capita (1)
-
 Let's stick to the cars data some more. This time you want to find out which countries have a high cars per capita figure. In other words, in which countries do many people have a car, or maybe multiple cars.
 
 Similar to the previous example, you'll want to build up a boolean Series, that you can then use to subset the cars DataFrame to select certain observations. If you want to do this in a one-liner, that's perfectly fine!
@@ -279,7 +259,6 @@ Select the cars_per_cap column from cars as a Pandas Series and store it as cpc.
 Use cpc in combination with a comparison operator and 500. You want to end up with a boolean Series that's True if the corresponding country has a cars_per_cap of more than 500 and False otherwise. Store this boolean Series as many_cars.
 Use many_cars to subset cars, similar to what you did before. Store the result as car_maniac.
 Print out car_maniac to see if you got it right.
-
 ```
 # Import cars data
 import pandas as pd
@@ -295,7 +274,6 @@ print(car_maniac)
 ```
 
 # Cars per capita (2)
-
 Remember about np.logical_and(), np.logical_or() and np.logical_not(), the Numpy variants of the and, or and not operators? You can also use them on Pandas Series to do more advanced filtering operations.
 
 Take this example that selects the observations that have a cars_per_cap between 10 and 80. Try out these lines of code step by step to see what's happening.
@@ -307,7 +285,6 @@ medium = cars[between]
 Requirement(s)
 Use the code sample above to create a DataFrame medium, that includes all the observations of cars that have a cars_per_cap between 100 and 500.
 Print out medium.
-
 ```
 # Import cars data
 import pandas as pd
