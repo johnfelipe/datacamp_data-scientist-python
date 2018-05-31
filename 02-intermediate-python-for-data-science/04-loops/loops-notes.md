@@ -1,5 +1,4 @@
 # Basic while loop
-
 Below you can find the example from the video where the error variable, initially equal to 50.0, is divided by 4 and printed out on every run:
 
 error = 50.0
@@ -14,7 +13,6 @@ Code a while loop that keeps running as long as offset is not equal to 0. Inside
 Print out the sentence "correcting...".
 Next, decrease the value of offset by 1. You can do this with offset = offset - 1.
 Finally, print out offset so you can see how it changes.
-
 ```
 # Initialize offset
 offset = 8
@@ -28,7 +26,6 @@ while offset != 0 :
 
 
 # Add conditionals
-
 The while loop that corrects the offset is a good start, but what if offset is negative? You can try to run the sample code on the right where offset is initialized to -6, but your sessions will be disconnected. The while loop will never stop running, because offset will be further decreased on every run. offset != 0 will never become False and the while loop continues forever.
 
 Fix things by putting an if-else statement inside the while loop.
@@ -38,7 +35,6 @@ Inside the while loop, replace offset = offset - 1 by an if-else statement:
 If offset > 0, you should decrease offset by 1.
 Else, you should increase offset by 1.
 If you've coded things correctly, hitting Submit Answer should work this time.
-
 ```
 # Initialize offset
 offset = -6
@@ -54,7 +50,6 @@ while offset != 0 :
 ```
 
 # Loop over a list
-
 Have another look at the for loop that Filip showed in the video:
 
 fam = [1.73, 1.68, 1.71, 1.89]
@@ -66,7 +61,6 @@ The areas variable, containing the area of different rooms in your house, is alr
 
 Requirement(s)
 Write a for loop that iterates over all elements of the areas list and prints out every element separately.
-
 ```
 # areas list
 areas = [11.25, 18.0, 20.0, 10.75, 9.50]
@@ -77,7 +71,6 @@ for a in areas:
 ```
 
 # Indexes and values (1)
-
 Using a for loop to iterate over a list only gives you access to every list element in each run, one after the other. If you also want to access the index information, so where the list element you're iterating over is located, you can use enumerate().
 
 As an example, have a look at how the for loop from the video was converted:
@@ -87,7 +80,6 @@ for index, height in enumerate(fam) :
 
 Requirement(s)
 Adapt the for loop in the sample code to use enumerate(). On each run, a line of the form "room x: y" should be printed, where x is the index of the list element and y is the actual list element, i.e. the area. Make sure to print out this exact string, with the correct spacing.
-
 ```
 # areas list
 areas = [11.25, 18.0, 20.0, 10.75, 9.50]
@@ -98,12 +90,10 @@ for i, a in enumerate(areas) :
 ```
 
 # Indexes and values (2)
-
 For non-programmer folks, room 0: 11.25 is strange. Wouldn't it be better if the count started at 1?
 
 Requirement(s)
 Adapt the print() function in the for loop on the right so that the first printout becomes "room 1: 11.25", the second one "room 2: 18.0" and so on.
-
 ```
 # areas list
 areas = [11.25, 18.0, 20.0, 10.75, 9.50]
@@ -114,14 +104,12 @@ for index, area in enumerate(areas) :
 ```
 
 # Loop over list of lists
-
 Remember the house variable from the Intro to Python course? Have a look at its definition on the right. It's basically a list of lists, where each sublist contains the name and area of a room in your house.
 
 It's up to you to build a for loop from scratch this time!
 
 Requirement(s)
 Write a for loop that goes through each sublist of house and prints out the x is y sqm, where x is the name of the room and y is the area of the room.
-
 ```
 # house list of lists
 house = [["hallway", 11.25], 
@@ -136,7 +124,6 @@ for x in house :
 ```
 
 # Loop over dictionary
-
 In Python 3, you need the items() method to loop over a dictionary:
 world = { "afghanistan":30.55, 
           "albania":2.77,
@@ -149,7 +136,6 @@ Remember the europe dictionary that contained the names of some European countri
 
 Requirement(s)
 Write a for loop that goes through each key:value pair of europe. On each iteration, "the capital of x is y" should be printed out, where x is the key and y is the value of the pair.
-
 ```
 # Definition of dictionary
 europe = {'spain':'madrid', 'france':'paris', 'germany':'berlin',
@@ -161,7 +147,6 @@ for k, v in europe.items():
 ```
 
 # Loop over Numpy array
-
 If you're dealing with a 1D Numpy array, looping over all elements can be as simple as:
 
 for x in my_array :
@@ -176,7 +161,6 @@ Requirement(s)
 Import the numpy package under the local alias np.
 Write a for loop that iterates over all elements in np_height and prints out "x inches" for each element, where x is the value in the array.
 Write a for loop that visits every element of the np_baseball array and prints it out.
-
 ```
 # Import numpy as np
 import numpy as np
@@ -191,7 +175,6 @@ for element in np.nditer(np_baseball):
 ```
 
 # Loop over DataFrame (1)
-
 Iterating over a Pandas DataFrame is typically done with the iterrows() method. Used in a for loop, every observation is iterated over and on every iteration the row label and actual row contents are available:
 for lab, row in brics.iterrows() :
     ...
@@ -199,7 +182,6 @@ In this and the following exercises you will be working on the cars DataFrame. I
 
 Requirement(s)
 Write a for loop that iterates over the rows of cars and on each iteration perform two print() calls: one to print out the row label and one to print out all of the rows contents.
-
 ```
 # Import cars data
 import pandas as pd
@@ -212,14 +194,12 @@ for lab, row in cars.iterrows():
 ```
 
 # Loop over DataFrame (2)
-
 The row data that's generated by iterrows() on every run is a Pandas Series. This format is not very convenient to print out. Luckily, you can easily select variables from the Pandas Series using square brackets:
 for lab, row in brics.iterrows() :
     print(row['country'])
 
 Requirement(s)
 Adapt the code in the for loop such that the first iteration prints out "US: 809", the second iteration "AUS: 731", and so on. The output should be in the form "country: cars_per_cap". Make sure to print out this exact string, with the correct spacing.
-
 ```
 # Import cars data
 import pandas as pd
@@ -231,10 +211,8 @@ for lab, row in cars.iterrows() :
 ```
 
 # Add column (1)
+To add the length of the country names of the brics DataFrame in a new column:
 
-In the video, Filip showed you how to add the length of the country names of the brics DataFrame in a new column:
-
-Requirement(s)
 for lab, row in brics.iterrows() :
     brics.loc[lab, "name_length"] = len(row["country"])
     
@@ -243,7 +221,6 @@ You can do similar things on the cars DataFrame.
 Requirement(s)
 Use a for loop to add a new column, named COUNTRY, that contains a uppercase version of the country names in the "country" column. You can use the string method upper() for this.
 To see if your code worked, print out cars. Don't indent this code, so that it's not part of the for loop.
-
 ```
 # Import cars data
 import pandas as pd
@@ -253,13 +230,11 @@ cars = pd.read_csv('cars.csv', index_col = 0)
 for lab, row in cars.iterrows():
     cars.loc[lab, "COUNTRY"] = row["country"].upper()
 
-
 # Print cars
 print(cars)
 ```
 
 # Add column (2)
-
 Using iterrows() to iterate over every observation of a Pandas DataFrame is easy to understand, but not very efficient. On every iteration, you're creating a new Pandas Series.
 
 If you want to add a column to a DataFrame by calling a function on another column, the iterrows() method in combination with a for loop is not the preferred way to go. Instead, you'll want to use apply().
@@ -275,7 +250,6 @@ We can do a similar thing to call the upper() method on every name in the countr
 Requirement(s)
 Replace the for loop with a one-liner that uses .apply(str.upper). The call should give the same result: a column COUNTRY should be added to cars, containing an uppercase version of the country names.
 As usual, print out cars to see the fruits of your hard labor
-
 ```
 # Import cars data
 import pandas as pd
