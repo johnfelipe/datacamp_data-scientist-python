@@ -75,7 +75,7 @@ You're getting very good at using lambda functions! Here's one more function to 
 
 Remember gibberish() from a few exercises back?
 
-# Define gibberish
+#Define gibberish
 def gibberish(*args):
     """Concatenate strings in *args together."""
     hodgepodge = ''
