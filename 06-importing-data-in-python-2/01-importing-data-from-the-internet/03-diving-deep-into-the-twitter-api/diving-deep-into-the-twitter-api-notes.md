@@ -98,10 +98,10 @@ def word_in_text(word, tweet):
     word = word.lower()
     text = tweet.lower()
     match = re.search(word, tweet)
-
     if match:
         return True
     return False
+    
  You're going to iterate over the rows of the DataFrame and calculate how many tweets contain each of our keywords! The list of objects for each candidate has been initialized to 0.
  
  Requirement(s)
