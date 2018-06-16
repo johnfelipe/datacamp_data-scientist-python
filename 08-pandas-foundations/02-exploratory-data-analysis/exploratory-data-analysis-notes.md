@@ -262,7 +262,3 @@ titanic.loc[titanic['pclass'] == 3].plot(ax=axes[2], y='fare', kind='box')
 plt.show()
 ```
 
-
-
-
-
