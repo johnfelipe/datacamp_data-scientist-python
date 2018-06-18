@@ -9,11 +9,11 @@ Convert date_list into a datetime object by using the pd.to_datetime() function.
 Construct a pandas Series called time_series using pd.Series() with temperature_list and my_datetimes. Set the index of the Series to be my_datetimes.
 ```
 # Prepare a format string: time_format
-time_format = ____
+time_format = '%Y-%m-%d %H:%M'
 
 # Convert date_list into a datetime object: my_datetimes
-my_datetimes = ____(____, ____=____)  
+my_datetimes = pd.to_datetime(date_list, format=time_format)  
 
 # Construct a pandas Series using temperature_list and my_datetimes: time_series
-time_series = ____(temperature_list, ____=my_datetimes)
+time_series = pd.Series(temperature_list, index=my_datetimes)
 ```
