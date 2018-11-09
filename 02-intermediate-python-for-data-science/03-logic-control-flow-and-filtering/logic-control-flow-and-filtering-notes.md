@@ -1,4 +1,4 @@
-# Equality
+# Equality 
 To check if two Python values, or variables, are equal you can use ==. To check for inequality, you need !=. As a refresher, have a look at the following examples that all result in True. Feel free to try them out in the IPython Shell.
 2 == (1 + 1)
 "intermediate" != "python"
