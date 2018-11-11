@@ -1,4 +1,4 @@
-# Motivation for dictionaries
+# Motivation for dictionaries 
 To see why dictionaries are useful, have a look at the two lists defined on the right. countries contains the names of some European countries. capitals lists the corresponding names of their capital.
 
 Requirement(s)
