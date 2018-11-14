@@ -1,4 +1,4 @@
-# The Python Interface
+# The Python Interface 
 You can use the shell interactively by simply typing commands and hitting Enter. When you work in the shell directly, your code will not be checked for correctness so it is a great way to experiment.
 
 Requirement(s)
