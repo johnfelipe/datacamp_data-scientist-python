@@ -1,4 +1,4 @@
-# Your First NumPy Array 
+# Your First NumPy Array
 In this chapter, we dive into the world of baseball. Along the way, you'll get comfortable with the basics of numpy, a powerful package to do data science.
 A list baseball has already been defined in the Python script, representing the height of some baseball players in centimeters. 
 
