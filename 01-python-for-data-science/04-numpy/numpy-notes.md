@@ -2,7 +2,7 @@
 In this chapter, we dive into the world of baseball. Along the way, you'll get comfortable with the basics of numpy, a powerful package to do data science.
 A list baseball has already been defined in the Python script, representing the height of some baseball players in centimeters. 
 
-Requirement(s)
+Requirement(s) 
 Import the numpy package as np, so that you can refer to numpy with np.
 Use np.array() to create a numpy array from baseball. Name this array np_baseball.
 Print out the type of np_baseball to check that you got it right.
