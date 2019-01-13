@@ -12,7 +12,7 @@ print(5 / 8)
 print(7 + 10)
 ```
 
-# When to use Python?
+# When to use Python? 
 Python is a pretty versatile language. For which applications can you use Python?
 
 - [ ] - You want to do some quick calculations.
