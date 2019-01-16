@@ -20,7 +20,7 @@ Python is a pretty versatile language. For which applications can you use Python
 - [ ] - Your boss asks you to clean and analyze the results of the latest satisfaction survey.
 - [x] - All of the above. 
 
-# Any comments? 
+# Any comments?
 Something that Filip didn't mention in his videos is that you can add comments to your Python scripts. Comments are important to make sure that you and others can understand what your code is about.
 
 To add comments to your Python script, you can use the # tag. These comments are not run as Python code, so they will not influence your result. 
