@@ -1,4 +1,4 @@
-# Using .value_counts() for ranking
+# Using .value_counts() for ranking 
 For this exercise, you will use the pandas Series method .value_counts() to determine the top 15 countries ranked by total number of medals.
 
 Notice that .value_counts() sorts by values by default. The result is returned as a Series of counts indexed by unique entries from the original Series with values (counts) ranked in descending order.
