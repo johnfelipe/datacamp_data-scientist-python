@@ -1,4 +1,4 @@
-# Random float
+# Random float 
 Randomness has many uses in science, art, statistics, cryptography, gaming, gambling, and other fields. You're going to use randomness to simulate a game.
 
 All the functionality you need is contained in the random package, a sub-package of numpy. In this exercise, you'll be using two functions from this package:
